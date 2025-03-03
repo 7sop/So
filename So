@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر SO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h3 {
+            margin: 15px 0;
+        }
+        .product p {
+            color: #888;
+        }
+        .product select {
+            margin-top: 10px;
+            padding: 5px;
+            width: 100%;
+        }
+        .whatsapp-button {
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+        }
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>متجر SO</h1>
+    <p>اختار من بين منتجاتنا الرائعة</p>
+</header>
+
+<div class="product-container">
+    <!-- مثال على منتج -->
+    <div class="product">
+        <img src="product-image.jpg" alt="منتج 1">
+        <h3>منتج 1</h3>
+        <p>السعر: 100 دولار</p>
+        <label for="color">اللون:</label>
+        <select id="color">
+            <option value="red">أحمر</option>
+            <option value="blue">أزرق</option>
+            <option value="green">أخضر</option>
+        </select>
+        <label for="size">المقاس:</label>
+        <select id="size">
+            <option value="small">صغير</option>
+            <option value="medium">متوسط</option>
+            <option value="large">كبير</option>
+        </select>
+        <a href="https://wa.me/رقم_الواتساب_الخاص_بك?text=أرغب%20في%20شراء%20منتج%201%20باللون%20%20&size=">
+            <button class="whatsapp-button">اطلب الآن عبر واتساب</button>
+        </a>
+    </div>
+
+    <!-- يمكنك إضافة المزيد من المنتجات هنا بنفس الشكل -->
+</div>
+
+</body>
+</html>
